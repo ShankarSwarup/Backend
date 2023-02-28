@@ -33,6 +33,7 @@ app.listen(process.env.PORT || 5000,host,function(){
 
 
 app.get("/",(req,res)=>{
+    res.setHeader("Access-Control-Allow-Credentials","true");
     res.send("Hello world");
 })
 
